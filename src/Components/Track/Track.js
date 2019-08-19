@@ -4,12 +4,14 @@ const isRemoval = true
 
 export class Track extends React.Component {
   render() {
-    return (<div class="Track">
+    return (<div className="Track">
     <div className="Track-information">
-    <h3>trackName</h3>
-    <p>Artist | album </p>
+    <h3>{this.props.track.name} Hello </h3>
+    <p>{this.props.track.artist} Hello | {this.props.track.album}</p>
     </div>
     {isRemoval ? <button>-</button> :<button>+</button>}
     <button className="Track-action"></button>
     </div>
   )}}
+
+  export default Track
